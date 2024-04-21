@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: rgba(151, 149, 149, 0.637);
+}
+
+header {
+  background-color: white;
+  padding: 25px;
+  box-shadow: 1px 1px 50px 2px black;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(26, 25, 25);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.flex-header {
+  justify-content: space-between;
+  display: flex;
+}
+
+hr{
+  margin: 25px;
+}
+
+main {
+  padding: 25px;
+  background-color: white;
+  width: 85svw;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 45px 50px 1px black;
+}
+
+p {
+  line-height: 1.5em;
+  text-indent: 2%;
+}
+
+main h1 {
+  margin: 10px;
+}
+
+main h2 {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 25px;
+  background-color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "item-1 item-3" "item-1 item-3";
+  overflow-wrap: normal;
+  gap: 50px;
+  width: 95svw;
+}
+
+.grid img {
+  margin-left: 40px;
+  min-width: 25svw;
+  max-width: 400px;
+  max-height: 620px;
+}
+
+footer > ul {
+  columns: 3;
+  width: fit-content;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.text1 {
+  grid-area: item-1;
+}
+.text2 {
+  grid-area: item-2;
+}
+.img1 {
+  grid-area: item-3;
+}
